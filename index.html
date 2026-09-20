@@ -266,8 +266,10 @@ const ICONS={
  twitter:'<path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>',
  instagram:'<rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>'
 };
-const NAMES={github:'https://github.com/humaaashraf',linkedin:'https://linkedin.com/in/humaaa/',twitter:'https://x.com/humaaashraf',instagram:'https://instagram.com/humashrf'};
-const socHTML=Object.keys(ICONS).filter(k=>!HIDE.includes(k)).map(k=>{
+<a href="https://github.com/humaaashraf" target="_blank"><Github /></a>
+<a href="https://linkedin.com/in/humaaa" target="_blank"><Linkedin /></a>
+<a href="https://x.com/humaaashraf" target="_blank"><Twitter /></a>
+<a href="https://instagram.com/humashrf" target="_blank"><Instagram /></a>
   const u=PROFILE[k],svg=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[k]}</svg>`;
   return u?`<a href="${u}" ${ext} aria-label="${NAMES[k]}" title="${NAMES[k]}">${svg}</a>`:`<span class="off" title="Add your ${NAMES[k]} link" aria-hidden="true">${svg}</span>`;
 }).join('');
